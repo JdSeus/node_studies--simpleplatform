@@ -11,5 +11,9 @@
     "url": "https://github.com/JdSeus/nodestudies-simpleplatform.git"
   },
   "author": "Juliano Seus",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
 }
