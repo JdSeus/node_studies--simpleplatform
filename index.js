@@ -1,6 +1,17 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const connection = require("./database/database")
+
+//DATABSE
+connection
+.authenticate()
+.then(() => {
+    console.log("Conexao feita com o bando de dados!")
+})
+.catch((msgErro) =>{
+    console.log(msgErro);
+})
 
 //EXPRESS
 app.set('view engine', 'ejs');
